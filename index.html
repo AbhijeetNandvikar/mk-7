@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klingon Translate</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #header{
+            width: 100%;
+            /* height: 120px; */
+            text-align: center;
+            background-color: rgb(0, 0, 149);
+            color: white;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: 32px;
+        }
+
+        footer{
+            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(0, 0, 149);
+            color: white;
+            font-size: 20px;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            width: 100%;
+        }
+        textarea {
+            width: 80%;
+            height: 10vh;
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        #output {
+            border: 1px solid black;
+            height: 10vh;
+            width: 80%;
+            margin: 1rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">Translate to Klingon</div>
+    <textarea id="txt-input"
+        placeholder="put your sentence in English here and we will convert it to klingon"></textarea>
+    <button id="btn-translate">Translate</button>
+
+    <div style="font-size: larger;"> Output will come here 👇</div>
+    <div id="output"></div>
+
+    <footer>
+        <div>About</div>
+        <div>
+            This is a Klingon translate app
+        </div>
+    </footer>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
